@@ -1,0 +1,103 @@
+/* footer.css */
+.Icone {
+  font-size: 25px;
+  margin-right: 10px;
+  color: var(--secondary-bg);
+  margin: 6px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Icone:hover {
+  color: var(--Secondary-btn-color);
+  transform: scale(1.2);
+}
+
+.footer {
+  background-color: black;
+  padding: 24px;
+  color: #dee2e6;
+ 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-social,
+.footer-links,
+.footer-subscribe {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 18px;
+  color: var(--secondary-bg);
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  padding: 2px 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--secondary-bg);
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--Secondary-btn-color);
+}
+
+.subscribe-btn {
+  color: white;
+  background-color: var(--primary-bg);
+  font-size: 14px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.subscribe-input {
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 4px;
+}
+
+.subscribe-text {
+  width: 70%;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  margin-top: 14px;
+}
+
+.footer-icons .Icone {
+  font-size: 25px;
+  margin-right: 10px;
+  color: var(--secondary-bg);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons .Icone:hover {
+  color: var(--Secondary-btn-color);
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #aaa;
+}

@@ -1,0 +1,69 @@
+.about-section-header {
+  position: relative;
+  height: 90vh;
+  padding-top: 120px;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  filter: brightness(0.6);
+}
+
+.about-description {
+  width: 65%;
+  text-align: center;
+}
+.about-title {
+
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+.why-choose-us {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.section-title {
+  font-size: 32px;
+  color: var(--secondary-bg, #ff4757);
+  margin-bottom: 40px;
+}
+
+.choose-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.choose-card {
+  background-color: #2a2a2a;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+}
+
+.choose-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}

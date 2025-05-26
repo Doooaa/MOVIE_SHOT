@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+   
+
+   
+}
+/* Import font packages */
+@import '@fontsource/bebas-neue';
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/700.css';
+
+
+:root {
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-special: 'Orbitron', sans-serif;
+  --primary-bg:#14213d;
+  --primary-text:#055786;
+  --secondary-bg: #0077b6;
+  --Secondary-btn-color:yellow
+
+}
+
+
+.bg-primary{
+  background-color:var(--primary-bg) ;
+  color: white;
+}
+.font-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  margin: 0;
+  /* Smooth font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: Create utility classes */
+.font-heading {
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+}
+
+.font-special {
+  font-family: var(--font-special);
+  text-transform: uppercase;
+}
+
+.flex-row-center{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap:8px;
+
+}
+.flex-col-center{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+
+}
+

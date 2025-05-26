@@ -1,0 +1,96 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 9px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+/* === Logo + Title === */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+/* === Burger Icon === */
+.burger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  padding: 2px 24px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 3px;
+}
+
+/* === hover === */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px !important;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 2px;
+  width: 0;
+  background-color: var(--Secondary-btn-color, yellow); 
+  transition: width 0.5s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: rgb(200, 195, 196);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* === Responsive sm === */
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+}
