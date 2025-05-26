@@ -1,45 +1,21 @@
 
-Installation
-To get started with the project locally, follow these steps:
+**Installation
+To get started with the project locally, follow these steps:**
 
-Clone the repository:
+**Clone the repository:**
+_git clone https://github.com/yourusername/movie-website.git_
+_cd movie-website_
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/movie-website.git
-cd movie-website
-Install the dependencies:
-
-bash
-Copy
-Edit
+**Install the dependencies:**
 npm install
-Run the development server:
 
-bash
-Copy
-Edit
+**For RUN**
 npm run dev
+
 This will start the Vite development server and you can open the website in your browser at http://localhost:3000.
 
-Project Structure:
-cpp
-Copy
-Edit
-/src
-  /components
-    Movie.js        // Movie card component
-    MovieDetail.js  // Movie detail page component
-  /pages
-    HomePage.js     // Home page that displays movie list
-  /assets
-    images/         // Store your images (e.g., movie posters)
-  App.js            // Main application file
-  main.js           // Entry point of the React app
-/public
-  index.html        // Main HTML file for the app
-Features:
+
+**Features:**
 Movie Card: Displays the movie title, release date, and popularity.
 
 Movie Detail: Shows additional information such as the movie overview.
